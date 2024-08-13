@@ -1,0 +1,121 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+main {
+    margin: 0;
+}
+
+.section {
+    border: 1px solid black;
+    padding: 0;
+    margin: 0em;
+    background-color: #ecd9d9;
+    position: relative;
+
+
+}
+
+.title_c {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #5f88ba;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+}
+
+.title_b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ea9e72;
+    color: white;
+    padding: 5px;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+}
+
+.title_s {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4ee3a5;
+    color: black;
+    padding: 5px;
+    border: 1px solid black;
+    width: 100px;
+    text-align: center;
+}
+
+p {
+    margin-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+/* Desktop Layout (992px and above) */
+@media (min-width: 992px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section {
+        width: 32%;
+        margin-bottom: 0;
+    }
+}
+
+/* Tablet Layout (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .section {
+        width: 48%;
+    }
+
+    #sushi {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Mobile Layout (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
+
+    #chicken {
+        margin-bottom: 20px;
+    }
+
+    #beef {
+        margin-bottom: 20px;
+    }
+}
